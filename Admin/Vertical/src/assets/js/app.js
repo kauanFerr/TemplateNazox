@@ -5,7 +5,6 @@ Contact: themesdesign.in@gmail.com
 File: Main Js File
 */
 ​
-​
 (function ($) {
 ​
     'use strict';
