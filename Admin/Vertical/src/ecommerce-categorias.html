@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Adicionar Produtos"})
+
+    <!-- twitter-bootstrap-wizard css -->
+    <link rel="stylesheet" href="assets/libs/twitter-bootstrap-wizard/prettify.css">
+
+    <!-- select2 css -->
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- dropzone css -->
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+
+    @@include("partials/head-css.html")
+
+</head>
+
+<body data-sidebar="dark">
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    @@include("partials/topbar.html")
+
+    @@include("partials/sidebar.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                @@include("partials/page-title.html", {"pagetitle": "Categorias", "title": "Adicionar categorias"})
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <div id="addproduct-nav-pills-wizard" class="twitter-bs-wizard">
+                                    <ul class="twitter-bs-wizard-nav">
+                                        <li class="nav-item">
+                                            <a href="#basic-info" class="nav-link" data-toggle="tab">
+                                                <span class="step-number">01</span>
+                                                <span class="step-title">informações Básicas</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content twitter-bs-wizard-tab-content">
+                                        <div class="tab-pane" id="basic-info">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="productname">Nome da categoria</label>
+                                                    <input id="productname" name="productname" type="text" class="form-control">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="coresBotoes">Cores dos botões</label>
+                                                            <select class="form-control select2">
+                                                                <option>Selecionar</option>
+                                                                <option value="EL">Vermelho</option>
+                                                                <option value="FA">Azul</option>
+                                                                <option value="FI">Preto</option>
+                                                                <option value="FI">Verde</option>
+                                                                <option value="FI">Amarelo</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <button type="submit" class="btn btn-primary mr-2 waves-effect waves-light">Salvar</button>
+                                        <button type="submit" class="btn btn-light waves-effect">Cancelar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div> <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        @@include("partials/footer.html")
+    </div>
+    <!-- end main content-->
+</div>
+<!-- END layout-wrapper -->
+
+@@include("partials/right-sidebar.html")
+
+@@include("partials/vendor-scripts.html")
+
+<!-- twitter-bootstrap-wizard js -->
+<script src="assets/libs/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+
+<script src="assets/libs/twitter-bootstrap-wizard/prettify.js"></script>
+
+<!-- select 2 plugin -->
+<script src="assets/libs/select2/js/select2.min.js"></script>
+
+<!-- dropzone plugin -->
+<script src="assets/libs/dropzone/min/dropzone.min.js"></script>
+
+<!-- init js -->
+<script src="assets/js/pages/ecommerce-add-product.init.js"></script>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
